@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: my-springboot-app
-        image: rahulkatlapathi1997/rahuljava
+        image: rahulkatlaparthi1997/rahuljava:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8085
