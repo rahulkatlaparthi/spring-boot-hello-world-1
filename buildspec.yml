@@ -1,18 +1,12 @@
 version: 0.2
 
 phases:
- pre_build:
-    # commands:
-    #   - wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-3.3.0.1492-linux.zip
-    #   - unzip ./sonar-scanner-cli-3.3.0.1492-linux.zip
-    #   - export PATH=$PATH:/sonar-scanner-3.3.0.1492-linux/bin/
+
   build:
     commands:
       - echo Entered the build phase...
       - mvn clean install
-      # - mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=sample1234
-      # - sleep 5
-      # - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
+
   post_build:
     commands:
       - echo Build completed successfully
